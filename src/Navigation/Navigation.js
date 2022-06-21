@@ -1,31 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { v4 as uuid } from 'uuid';
+import { useSelector } from 'react-redux';
+import './navigation.css'
+// import { v4 as uuid } from 'uuid';
 
 export default function Nav() {
-  const routLinks = [
-    {
-      path: '/',
-      text: 'Dictionary',
-    },
-    {
-      path: '/Dictionary',
-      text: 'Search Word',
-    },
-  ];
+  const { goBack } = useSelector((state) => state.dataReducer);
   return (
-    <header className="header">
-      <nav >
-       
-        <div >
-          <ul >
-            {routLinks.map((rout) => (
-              <li key={uuid()} className="nav-link">
-                <NavLink to={rout.path}>{rout.text}</NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <header >
+      <nav className='header'>
+      {goBack ? <NavLink to="/"> Back-to-Home</NavLink> : ''}
       </nav>
     </header>
   );
