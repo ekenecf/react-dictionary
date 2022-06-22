@@ -1,6 +1,6 @@
 html {
   height: auto;
-  background-image: url('../images/dictionary_image.jpg');
+  background-image: url('../images/dict_image.jpg');
   background-size: cover;
 }
 
@@ -9,23 +9,71 @@ html {
   margin-top: 20%;
   font-size: 30px;
   width: 70%;
+  color: #fff;
 }
 
 form input {
-  margin-left: 10%;
+  margin-inline: 10%;
   margin-top: 10%;
   width: 60%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-size: 20px;
+  text-align: center;
 }
 
 ::placeholder {
-  font-size: 20px;
+  font-size: 24px;
   padding-inline: 10%;
   padding-top: 100%;
 }
 
 button {
-  background: #585858;
+  background: rgb(190, 157, 111);
   height: 30px;
   border-radius: 10px;
   color: #fff;
+}
+
+.subheader p {
+  margin-top: 40%;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 992px) {
+  .subheader p {
+    margin-top: 0;
+    margin-right: 15%;
+  }
+
+  .subheader h2 {
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  form input {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  button {
+    height: 50px;
+    border-radius: 10px;
+    width: 10%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 3px 6px rgb(145, 114, 74);
+  }
+
+  button:hover {
+    background-color: rgb(136, 133, 128);
+  }
 }
