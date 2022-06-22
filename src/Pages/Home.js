@@ -18,9 +18,9 @@ const Input = () => {
             }}>
                 <input onChange={(event) => setstate(event.target.value)}
                     type="search"
-                    placeholder="input word" required />
+                    placeholder="input word here" required />
                 <NavLink  to="/Dictionary"  state={{ state: state }}>
-                    <button type="submit">Add</button>
+                    <button type="submit">Search</button>
                 </NavLink>
             </form>
         </div>
