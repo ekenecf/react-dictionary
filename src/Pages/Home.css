@@ -1,0 +1,31 @@
+html {
+  height: auto;
+  background-image: url('../images/dictionary_image.jpg');
+  background-size: cover;
+}
+
+.subheader h2 {
+  margin-inline: 25%;
+  margin-top: 20%;
+  font-size: 30px;
+  width: 70%;
+}
+
+form input {
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 60%;
+}
+
+::placeholder {
+  font-size: 20px;
+  padding-inline: 10%;
+  padding-top: 100%;
+}
+
+button {
+  background: #585858;
+  height: 30px;
+  border-radius: 10px;
+  color: #fff;
+}
