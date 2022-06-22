@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <header >
       <nav className='header'>
-        <p>Welcome to Ekene's React Dictionary</p>
+        {/* <p>Welcome to Ekene's React Dictionary</p> */}
       {goBack ? <NavLink to="/"> Back-to-Home</NavLink> : ''}
       </nav>
     </header>

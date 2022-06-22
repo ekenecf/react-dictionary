@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import getData from "../Redux/api";
 import Dictionarydisplay from "./Dictionarydisplay";
 import { useLocation } from "react-router-dom";
+import '../Pages/Dictionary.css';
 
 const Dictionary = () => {
     const { dictionaryData, loading, error } = useSelector((state) => state.dataReducer)
@@ -22,7 +23,7 @@ const Dictionary = () => {
           <div className="loadingImage">
             <img
               src="https://c.tenor.com/FBeNVFjn-EkAAAAC/ben-redblock-loading.gif"
-              alt="imageloading..."
+              alt="imageloading..." 
             />
           </div>
         );
@@ -31,24 +32,14 @@ const Dictionary = () => {
         return <p>Please refresh the page</p>;
       }
       return (
-      <div>
+      <div className="display">
            <Dictionarydisplay
            prop={dictionary}
            />      
       </div>
-        // 
       )
 
   
 }
 
 export default Dictionary
-// data={console.log(data)}
-          // phonetics={data.phonetics.map(pronounce => pronounce.text)}
-          // sound={data.phonetics.map(sounds => sounds.audio)}
-          //  key={generate()}
-          //  word={data.word}
-          //  partsOfSpeech={data.meanings.map((meaning) => meaning.partOfSpeech)}
-          //  antonmys={data.meanings.map(meaning => meaning.antonyms.map(antonmy => antonmy))}
-          //  meaning= {data.meanings.map((meaning) => meaning.definitions.map(definition => definition.definition))}
-          //  synonyms= {data.meanings.map((meaning) => meaning.synonyms)}

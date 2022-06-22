@@ -1,0 +1,9 @@
+.display {
+  padding-left: 5%;
+  text-align: center;
+}
+
+.loadingImage img {
+  height: 102vh;
+  width: 100%;
+}
