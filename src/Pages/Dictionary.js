@@ -37,19 +37,9 @@ const Dictionary = () => {
            prop={dictionary}
            />      
       </div>
-        // 
       )
 
   
 }
 
 export default Dictionary
-// data={console.log(data)}
-          // phonetics={data.phonetics.map(pronounce => pronounce.text)}
-          // sound={data.phonetics.map(sounds => sounds.audio)}
-          //  key={generate()}
-          //  word={data.word}
-          //  partsOfSpeech={data.meanings.map((meaning) => meaning.partOfSpeech)}
-          //  antonmys={data.meanings.map(meaning => meaning.antonyms.map(antonmy => antonmy))}
-          //  meaning= {data.meanings.map((meaning) => meaning.definitions.map(definition => definition.definition))}
-          //  synonyms= {data.meanings.map((meaning) => meaning.synonyms)}

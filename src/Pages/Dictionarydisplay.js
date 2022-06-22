@@ -14,7 +14,6 @@ const Dictionarydisplay = ({prop}) => {
     const dictionaryMeanings = Object.values(objectDictionaryArrayDefinitionsValues)
     const synonmys = {...objectDictionaryArrayMeanings.synonyms}
     const similarMeaning = Object.values(synonmys)
-    dictMeaningAntonymValues.map((meaning) => console.log(meaning))
 
     return (
         <div className="dictionary_meaning">
