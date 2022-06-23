@@ -38,8 +38,5 @@ const Dictionary = () => {
            />      
       </div>
       )
-
-  
 }
-
 export default Dictionary
