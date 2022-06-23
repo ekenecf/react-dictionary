@@ -8,24 +8,15 @@ p.word {
   font-size: 25px;
 }
 
-p.antonyms {
+p.antonyms,
+.PartsOfspeech,
+.definition {
   margin-bottom: 4%;
 }
 
-p.synonyms {
+p.synonyms,
+.phonetic {
   margin-bottom: 2%;
-}
-
-p.phonetic {
-  margin-bottom: 2%;
-}
-
-p.PartsOfspeech {
-  margin-bottom: 4%;
-}
-
-p.definition {
-  margin-bottom: 5%;
 }
 
 @media screen and (min-width: 992px) {
