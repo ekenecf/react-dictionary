@@ -3,7 +3,7 @@
 
 # Dictionary app
 
-An online source for English definitions, synonyms, qantword.
+An online source for English definitions, synonyms, antonyms, phonetics.
 
 ## Built With
 
