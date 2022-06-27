@@ -19,7 +19,7 @@ const Dictionarydisplay = ({prop}) => {
         <div className="dictionary_meaning">
            <p className="word">word: {prop.word}</p>
            <p className="phonetic">Phonetic: {prop.phonetic} </p>
-           <div>{dictMeaningAntonymValues.map(meaning => <p className="antonyms">Antonym: {meaning}</p> )}</div>
+           <div>{dictMeaningAntonymValues.map(meaning => <p className="antonyms"  key={generate()}>Antonym: {meaning}</p> )}</div>
            <div>{similarMeaning.map(closeMeaning => <p className="synonyms" key={generate()}>Synonyms: {closeMeaning}</p> )}</div>
            <div>{dictionaryArrayMeanings.map(pos => <p className="PartsOfspeech" key={generate()}>partOfSpeech: {pos.partOfSpeech}</p> )}</div>
            <div>{dictionaryMeanings.map(defMeaning => <p className="definition" key={generate()}>Definition: {defMeaning.definition}</p> )}</div>
