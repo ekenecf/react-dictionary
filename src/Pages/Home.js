@@ -8,14 +8,12 @@ import './Home.css';
 const Input = () => {
     const dispatch = useDispatch();
     const [state, setstate] = useState('');
-
     return (
         <div className='subheader'>
             <p>Welcome to Ekene's React Dictionary</p>
             <h2>NEW SEARCH</h2>
             <form onSubmit={(e) => {
                 e.preventDefault();
-                dispatch(getData(state));
             }}>
                 <input onChange={(event) => setstate(event.target.value)}
                     type="search"
