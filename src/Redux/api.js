@@ -11,4 +11,4 @@ const getData = (word) => (dispatch) => {
         dispatch(setError(error.message));
       });
   };
-  export default getData;
+export default getData;

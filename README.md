@@ -11,7 +11,7 @@ An online source for English definitions, synonyms, antonyms, phonetics.
 - Frameworks: React
 - Technologies used: 
 
-[Live Demo Here](https://github.com/ekenecf/react-dictionary)
+[Live Demo Here](https://incandescent-puffpuff-380218.netlify.app/)
 
 ## Getting started
 - To get a local copy up and running follow these simple example steps.
